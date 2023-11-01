@@ -18,4 +18,4 @@ let students = [
         console.log(student.name); 
         console.log(averageScore.toFixed(2)+"\n");
     }
-   
+  
