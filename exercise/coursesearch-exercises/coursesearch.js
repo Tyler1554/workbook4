@@ -63,18 +63,22 @@ let title = getTitleById(courses, "PROJ500")
 console.log(`Course Id: ${title}`);
 
 
-function coursesByCost (courses, Fee){
+
+
+function coursesByCost (courses, fee){
     let coursesUnderFifty = [];
     for (const course of courses) {
-        if (course.Fee<=Fee){
+        if (course.Fee<=fee){
         coursesUnderFifty.push(course.Title)
         }
        
     }
     return coursesUnderFifty;
 }
-let cost= coursesByCost(courses, "50.00")
+let cost= coursesByCost(courses, 50.00)
 console.log(`Course: ${cost}`); 
+
+
 
 
 
